@@ -1,0 +1,84 @@
+.navgrid {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    background-color: #00a997;
+}
+
+.title {
+    text-align: center;
+}
+
+.title a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    line-height: 1.5;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.title a:hover {
+    color: black;
+}
+
+.signup {
+    padding-top: 10px;
+    padding-left: 15%;
+}
+
+.signup a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.signup a:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#navgrid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: white;
+    padding: 10px;
+}
+
+.navlink {
+    /*background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);*/
+    font-size: 20px;
+    text-align: center;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navlink a:hover {
+    color: #00a997;
+}
+
+/*RESPONSIVE */

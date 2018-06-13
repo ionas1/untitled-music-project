@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
     <title>HalfTime</title>
 </head>
 
@@ -28,8 +24,8 @@
                 </a>
             </div>
             <div class="signup">
-                <a href="php/login.php">Log-In</a> |
-                <a href="php/signup.php">Sign-up</a>
+                <a href="../php/login.php">Log-In</a> |
+                <a href="../php/signup.php">Sign-up</a>
             </div>
         </div>
 
@@ -51,20 +47,5 @@
             </div>
         </div>
     </header>
-    <div id="banner">
-        <img src="img/banner-image.jpg">
-        <h1>Record
-            <br>Without
-            <br>Limit.</h1>
-        <div class="topbtn">
-            <a href="login.php" class="banner-btn">Get started</a>
-        </div>
-    </div>
-
-
-    <section class="part2">
-        
-    </section>
 </body>
-
-</html>
+<html>

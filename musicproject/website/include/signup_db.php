@@ -3,7 +3,7 @@
 if (isset($_POST['submit'])) {
     include_once 'user_db_connect.php';
 
-    $first = mysqli_real_escape_string($conn, $_POST['firstname']);
+    $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
     $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $username = mysqli_real_escape_string($conn, $_POST['username']);
@@ -11,17 +11,17 @@ if (isset($_POST['submit'])) {
 
     //check if there are empty fields
     if (empty($firstname) || empty($lastname) || empty($email) || empty($username) || empty($password)){
-        header("Location: ../signup.php?signup=empty"); //error message ?signup=empty
+        header("Location: ../php/signup.php?signup=empty"); //error message ?signup=empty
         exit();
     } else {
-      //check if input chars are valid 'email etc'
-      if (!preg_match("/^[a-zA-Z]*$/", $firstname)  || !preg_match("/^[a-zA-Z]*$/", $lastname)) {
-        header("Location: ../signup.php?signup=invalid"); //error message ?signup=invalid
+      //check if input chars are valid 
+      if (!preg_match("/^[a-z A-Z]*$/", $firstname) || !preg_match("/^[a-z A-Z]*$/", $lastname)) {
+        header("Location: ../php/signup.php?signup=invalid"); //error message ?signup=invalid
         exit();
       } else {
           //check email validation
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            header("Location: ../signup.php?signup=invalid-email"); //error message invalid email
+            header("Location: ../php/signup.php?signup=invalid-email"); //error message invalid email
         exit();
         } else {
             $sql = "SELECT * FROM users WHERE user_id='$username'";
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
             $resultCheck = mysqli_num_rows($result);
 
             if ($resultCheck > 0){
-                header("Location: ../signup.php?signup=usertaken"); //user already exist
+                header("Location: ../php/signup.php?signup=usertaken"); //user already exist
                 exit();
             } else {
                 //hash password
@@ -37,14 +37,14 @@ if (isset($_POST['submit'])) {
                 //INSERT user into DB
                 $sql = "INSERT INTO user (user_firstname, user_lastname, user_email, user_username, user_password) VALUES ('$firstname', '$lastname', '$email', '$username', '$password');";
                 mysqli_query($conn, $sql);
-                header("Location: ../signup.php?signup=success"); //user already exist
+                header("Location: ../php/signup.php?signup=success"); //user succesfully inserted in databse, go back to signup.php
                 exit();
             }
         }
       } 
     }
 } else {
-    header("Location: ../signup.php");
+    header("Location: ../php/signup.php");
     exit();
 }
 ?>

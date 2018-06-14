@@ -6,6 +6,7 @@
 body {
     text-decoration: none;
     font-family: 'Righteous', cursive;
+    background-color: rgb(242, 242, 242);
 }
 
 /* FONTS 
@@ -24,15 +25,46 @@ color: #00a997;
     width: 20%;
     display: grid;
     grid-template-columns: auto;
-    margin: 15% auto;
+    margin: 5% auto;
+    padding-bottom: 2.5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.login-form input {
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+button {
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #00a997;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
 }
 
 .grid-item {
-    padding: 25px;
+    padding: 20px;
     
 }
 .login-form h1 {
     text-align: center;
     font-size: 35px;
     padding: 10px;
+    color: rgb(255, 255, 255);
+}
+input {
+    margin-top: 5%;
+    font-family: 'Righteous', cursive;
+    font-size: 15px;
+    
 }

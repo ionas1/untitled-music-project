@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
             header("Location: ../php/signup.php?signup=invalid-email"); //error message invalid email
         exit();
         } else {
-            $sql = "SELECT * FROM users WHERE user_id='$username'";
+            $sql = "SELECT * FROM users WHERE user_username='$username'";
             $result = mysqli_query($conn, $sql); //run in db
             $resultCheck = mysqli_num_rows($result);
 
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
                 //hash password
                 $hashPassword = password_hash($password, PASSWORD_DEFAULT);
                 //INSERT user into DB
-                $sql = "INSERT INTO user (user_firstname, user_lastname, user_email, user_username, user_password) VALUES ('$firstname', '$lastname', '$email', '$username', '$password');";
+                $sql = "INSERT INTO users (user_firstname, user_lastname, user_email, user_username, user_password) VALUES ('$firstname', '$lastname', '$email', '$username', '$hashPassword');";
                 mysqli_query($conn, $sql);
                 header("Location: ../php/signup.php?signup=success"); //user succesfully inserted in databse, go back to signup.php
                 exit();

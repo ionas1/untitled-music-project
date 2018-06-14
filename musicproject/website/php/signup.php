@@ -15,5 +15,11 @@
 
       <button class="grid-item" type="submit" name="submit">Signup</button> 
     </form>
+
+    <?php
+      if(isset($_SESSION['u_id'])){
+        echo "Logged in.";
+      }
+    ?>
 </body>
 </html>

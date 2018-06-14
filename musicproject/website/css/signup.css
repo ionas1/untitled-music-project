@@ -48,6 +48,14 @@ button {
     cursor: pointer;
     font-family: 'Righteous', cursive;
     font-size: 25px;
+
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+button:hover {
+    background-color: #007a6e;
 }
 
 .signup-form h1 {

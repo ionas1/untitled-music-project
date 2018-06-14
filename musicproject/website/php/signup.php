@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
    <link rel="stylesheet" type="text/css" href="../css/signup.css"/>
+   <link rel="stylesheet" type="text/css" href="../css/signup.css"/>
 </head>
 <body>
     <form class="signup-form" action="../include/signup_db.php" method="POST">
@@ -15,11 +16,5 @@
 
       <button class="grid-item" type="submit" name="submit">Signup</button> 
     </form>
-
-    <?php
-      if(isset($_SESSION['u_id'])){
-        echo "Logged in.";
-      }
-    ?>
 </body>
 </html>

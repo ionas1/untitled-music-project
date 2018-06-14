@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,13 +24,13 @@
         <div class="navgrid">
             <p></p>
             <div class="title">
-                <a href="index.html">
+                <a href="index.php">
                     <i>HALF | TIME</i>
                 </a>
             </div>
             <div class="signup">
-                <a href="../php/login.php">Log-In</a> |
-                <a href="../php/signup.php">Sign-up</a>
+                <a href="../php/login.php">LogIn</a> |
+                <a href="../php/signup.php">Signup</a>
             </div>
         </div>
 
@@ -37,7 +38,7 @@
         <div class="container">
             <div id="navgrid">
                 <div class="navlink">
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </div>
                 <div class="navlink">
                     <a href="php/library.php">Library</a>
@@ -50,6 +51,12 @@
                 </div>
             </div>
         </div>
+        <?php 
+    session_start();
+    if(isset($_SESSION['u_id'])){
+        echo "Logged in.";
+      }
+?>
     </header>
     <div id="banner">
         <img src="../img/banner-image.jpg">

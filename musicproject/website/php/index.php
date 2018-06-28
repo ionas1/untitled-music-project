@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="../css/home-mobile-not-loggedin.css">
     <title>HalfTime</title>
 </head>
 
@@ -34,7 +35,6 @@
             </div>
         </div>
 
-        <script src="js/js.js"></script>
         <div class="container">
             <div id="navgrid">
                 <div class="navlink">

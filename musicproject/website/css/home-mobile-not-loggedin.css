@@ -4,5 +4,18 @@
     }
 }
 @media screen and (max-width: 1920px){
-    
+    .topbtn {
+        margin-left: 44%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .topbtn {
+        margin-left: 42%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .topbtn {
+        margin-left: 39%;
+        margin-top: 20%;
+    }
 }
